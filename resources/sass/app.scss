@@ -1,0 +1,138 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+// Variables
+@import 'variables';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+#chat {
+  box-shadow: 0 0 50px 32px rgba(0, 0, 0, 0.30);
+  margin-top: 50px;
+}
+
+.col-dialogs {
+  background-color: $col-dialogs-bg;
+  color: #ffffff;
+}
+
+.col-chat {
+  background-color: $col-chat-bg;
+}
+
+.dialog {
+  text-decoration: none;
+  color: white;
+  padding: 22px 15px 22px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #4A576B;
+}
+
+.dialog img, .col-chat img {
+  border-radius: 50%;
+}
+
+.dialog .user-name {
+  font-weight: bold;
+}
+
+.dialog .dialog-time {
+  padding: 0;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.dialog:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #4A576B;
+}
+
+.col-chat .chat-head {
+  height: 12%;
+  padding: 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+.col-chat .chat-body {
+  height: 76%;
+  padding: 15px;
+  border-bottom: 1px solid lightgray;
+  overflow-y: auto;
+  align-content: flex-start;
+}
+
+.col-chat .send-message {
+  height: 12%;
+  padding: 15px;
+}
+
+#send-message {
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+.col-chat .send-message button {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #f23f54;
+  border: none;
+}
+
+.col-chat .send-message button:hover {
+  background-color: #ff5c6f;
+}
+
+.chat-body .user-message {
+  height: min-content;
+}
+
+.chat-body .user-message .message-text {
+  max-width: fit-content;
+  padding: 14px;
+  background-color: #efefef;
+  border-radius: 5px;
+}
+
+.chat-body .user-message .message-img:first-child {
+  max-width: 12%;
+}
+
+.chat-body .user-message .message-time {
+  padding: 15px;
+  font-size: 0.8rem;
+}
+
+.return-btn {
+  width: 100%;
+  background: #373e4f;
+  color: white;
+  border-bottom: 1px solid #4A576B;
+}
+
+@media (max-width: 600px) {
+  #chat, main {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .col-chat .send-message button {
+    display: none;
+  }
+
+  .message-img, .chat-head .col-1 {
+    padding: 0;
+  }
+
+}
