@@ -10,3 +10,6 @@
 test@test.com
 12345678
 
+**Дамп базы данных**
+
+https://yadi.sk/d/h8M6aZrreShJ2w
